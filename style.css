@@ -1,0 +1,679 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f3f5f5;
+}
+.wrapper {   
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+header {   
+    max-width: 100%;
+    height: 64px;
+    background-color: white; 
+}
+.adaptive-menu {
+    width: 1280px;
+    align-items: center;
+    display: none;
+}
+.adaptive-info-coins {
+    align-items: center;
+    width: 170px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #f3f5f5;
+}
+.toggle {
+    width: 100%;
+    padding-left: 20px;
+    text-align: right;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+}
+.main-menu {
+    width: 1280px;
+    align-items: center;   
+}
+.chessify {
+    align-items: center;
+    height: 32px;
+    margin-top: 16px;
+}
+.logo {
+    width: 109px;
+    align-items: center;
+}
+.title {
+    margin-left: 8px;
+    font-size: 18px;
+}
+.today-info {
+    width: 200px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin-left: 48px;
+    padding-left: 13px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #f3f5f5;
+}
+.arrow-down {
+    margin-top: 5px;
+}
+.today-number {
+    color: #358C65;
+}
+.statistics {
+    margin-left: 12px;
+    font-size: 14px;
+}
+.dashboard {
+    align-items: center;
+    margin-top: 16px;
+    margin-right: -15px;
+}
+.title-dashboard {
+    margin-right: 32px;
+    font-size: 14px;
+    color: #358C65;
+}
+.info-coins {
+    
+    align-items: center;
+    width: 170px;
+    height: 32px;
+    font-size: 14px;
+    border-radius: 8px;
+    background-color: #f3f5f5;
+}
+.coins {
+    margin-left: 10px;
+}
+.briefcase {
+    margin-top: 7px;
+    margin-right: 5px;
+}.buy {
+    margin-right: 10px;
+    color: #358C65;
+}
+.timur-ivanov {
+    align-items: center;
+    font-size: 14px;
+}
+.icon-user {
+    margin-left: 47px;
+    margin-top: 5px;
+}
+.ivanov {
+    margin-left: 17px;
+}
+.chevron-down {
+    margin-left: 10px;
+}
+
+.container {
+    
+    flex-flow: wrap;
+}
+.container-left {
+    /* width: 49.3%; */
+    width: 632px;
+    margin-top: 24px;
+}
+.left-block {
+    background-color: white;
+}
+.chess-image {
+    padding: 16px 16px 25px 16px;
+}
+.scoreboard {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.firouzja {
+    padding: 22px 0px 22px 16px;
+}
+.number {
+    color: #959d99;
+}
+.game-score {
+    align-items: center;
+    padding: 22px 22px;
+}
+.circle-left {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #959d99;
+}
+.circle-right {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid #959d99;
+    background-color: black;
+}
+.nakamura {
+    padding: 22px 18px 22px 0px;
+}
+.footerboard {
+    margin-top: 16px;
+    margin-bottom: 58px;
+}
+.input-left input{
+    width: 108px;
+    padding: 7px 8px 7px 30px;
+    border-radius: 8px;
+    border: 1px solid #dddddc;
+    color: #358C65;
+}
+.pencil {
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 7px;
+}
+.input-right input {
+    width: 83px;
+    padding: 7px 8px 7px 30px;
+    border-radius: 8px;
+    border: 1px solid #dddddc;
+    color: #358C65;
+}
+.chek-mark {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.container-right {
+    /* width: 49.3%; */
+    width: 632px;
+    margin-top: 24px;
+    margin-left: 16px;
+}
+.notation {
+    background-color: white;
+}
+.notation-header {
+    align-items: center;
+    font-size: 16px;
+    border-bottom: 2px solid #d1d1d0;
+}
+.notation-header {
+    padding: 18px 20px 18px 20px;
+}
+.title-notation {
+    margin-left: 8px;
+    color: #959D99;
+}
+.icon-search {
+    margin-left: 28px;
+}
+.reference {
+    margin-left: 10px;
+    color: #358C65;
+}
+.undo {
+    width: 32px;
+    height: 23px;
+    margin-right: 10px;
+    padding-left: 7px;
+    padding-top: 2px;
+    border-radius: 8px;
+    border: 2px solid  #d3d3d0;
+    cursor: pointer;
+}
+.tooltip-undo {
+    position: relative;
+    display: inline-block;
+}
+.tooltip-undo .tooltiptext-undo {
+    visibility: hidden;
+    width: 55px;
+    font-size: 12px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -35px;
+    margin-bottom: 5px;
+}
+.undo:hover {
+    background-color: #e5e5e4;
+}
+.tooltip-undo:hover .tooltiptext-undo {
+    visibility: visible;
+}
+.redo {
+    width: 32px;
+    height: 23px;
+    padding-left: 7px;
+    padding-top: 2px;
+    border-radius: 8px;
+    border: 2px solid  #d3d3d0;
+    cursor: pointer;
+}
+.tooltip-redo {
+    position: relative;
+    display: inline-block;
+}
+.tooltip-redo .tooltiptext-redo {
+    visibility: hidden;
+    width: 55px;
+    font-size: 12px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -20px;
+    margin-bottom: 5px;
+}
+.redo:hover {
+    background-color: #e5e5e4;
+}
+.tooltip-redo:hover .tooltiptext-redo {
+    visibility: visible;
+}
+.notation-table {
+    height: 134px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-top: 0px;
+    padding-left: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+    overflow: scroll;
+}
+th, td {
+    text-align: left;
+    padding: 4px;
+    border-bottom: 1px solid #d1d1d0;
+}
+
+.van {  
+    margin-top: 4px;
+    background-color: white;
+}
+.van-header {    
+    align-items: center;
+}
+.block-van {
+    width: 45px;
+    height: 20px;
+    padding-left: 20px;
+}
+.title-van {
+    margin-left: 10px;
+}
+.block-board-position {
+    align-items: center;
+    padding: 14px 16px 14px 0px;
+}
+.icon-van-right {
+    width: 30px;
+    height: 24px;
+    margin-right: 15px;
+    padding-left: 6px;
+    padding-top: 4px;
+    border: 1px solid #d3d3d0;
+    border-radius: 5px;
+}
+.input-van input{
+    width: 100px;
+    height: 24px;
+    padding-left: 8px;
+    border-radius: 8px;
+    border: 1px solid #d3d3d0;
+    color: #358C65;
+}
+.van-table {
+    height: 128px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-left: 10px;
+}
+.stockfish {
+    margin-top: 16px;
+    background-color: white;
+}
+.stockfish-header {
+    border-bottom: 2px solid #f3f5f5;
+}
+.stockfish-block {
+    padding: 14px 0px 14px 16px;
+}
+.stockfish-title {
+    font-size: 16px;
+}
+.chevron-up {
+    margin-left: 8px;
+}
+.server-block {
+    align-items: center;
+    font-size: 14px;
+    padding: 12px 16px 12px 0px;
+}
+.server {
+    margin-right: 8px;
+}
+.chevron-down {
+    margin-right: 16px;
+}
+.coins {
+    margin-right: 19px;
+}
+.btn-stop button{
+    width: 80px;
+    height: 24px;
+    border-radius: 8px;
+    color: white;
+    background-color: #358C65;
+    border: none;
+}
+.depth {
+    align-items: center;
+}
+.depth-block {
+    padding: 10px 0px 6px 16px;
+    font-size: 12px;
+    color: #6c6c69;
+}
+.speed {
+    margin-left: 8px;
+}
+.cpu {
+    margin-left: 8px;
+}
+.depth-circle {
+    width: 5px;
+    height: 5px;
+    margin-top: 6px;
+    margin-left: 8px;
+    border-radius: 50%;
+    border: 1px solid #636361;
+    background-color: #636361;
+}
+.depth-icon-block {
+    padding: 9px 16px 5px 0px;
+    font-size: 12px;
+}
+.depth-icon-minus {
+    width: 25px;
+    height: 21px;
+    margin-right: 8px;
+    padding-left: 3px;
+    padding-top: 1px;
+    border: 2px solid #e5e5e4;
+    border-radius: 8px;
+}
+.depth-number {
+    margin-right: 8px;
+    margin-top: 3px;
+}
+.depth-icon-plus {
+    width: 25px;
+    height: 21px;
+    margin-right: 8px;
+    padding-left: 3px;
+    padding-top: 1px;
+    border: 2px solid #e5e5e4;
+    border-radius: 8px;
+}
+.depth-icon-lock {
+    width: 25px;
+    height: 21px;
+    padding-left: 4px;
+    padding-top: 2px;
+    border: 2px solid #e5e5e4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.depth-icon-lock:hover {
+    background-color: #e5e5e4;
+}
+.tooltip-lock {
+    position: relative;
+    display: inline-block;
+}
+.tooltip-lock .tooltiptext-lock {
+    visibility: hidden;
+    width: 40px;
+    font-size: 10px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -20px;
+    margin-bottom: 3px;
+}
+.tooltip-lock:hover .tooltiptext-lock {
+    visibility: visible;
+}
+.stockfish-table {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.stockfish-scroll {
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.stockfish-table-block {
+    padding-bottom: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #6c6c69;    
+}
+.stockfish-button {
+    width: 64px;
+    height: 32px;
+    margin-left: 20px;
+    padding-top: 4px;
+    border: 2px solid #e5e5e4;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0,0,0,.25);
+}
+.stockfish-text {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.lc-zero {    
+    margin-top: 16px;
+}
+.zero-block {   
+    padding: 12px 16px 12px 16px;
+    align-items: center;
+    background-color: white;
+}
+.zero {
+    font-size: 16px;
+}
+.network-block {
+    align-items: center;
+    font-size: 12px;
+}
+.network-chevron-down {
+    margin-left: 8px;
+}
+.cpuct-block {
+    align-items: center;
+    font-size: 12px;
+}
+.cpuct-chevron-left {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    padding-left: 2px;
+    padding-top: 2px;
+    border-radius: 5px;
+    background-color: #f3f5f5;
+}
+.cpuct-chevron-right {
+    width: 20px;
+    height: 20px;
+    margin-left: 1px;
+    padding-left: 2px;
+    padding-top: 2px;
+    border-radius: 5px;
+    background-color: #f3f5f5;
+}
+.zero-coins {
+    font-size: 12px;
+}
+.btn-analyze button {
+    width: 65px;
+    height: 20px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: white;
+    background-color: #358C65;
+    border: none;
+}
+
+.show-more {
+    margin-top: 8px;
+}
+.show-more-block {
+    padding: 14px 14px 14px 16px;
+    background-color: white;
+    font-size: 14px;
+}
+.show-text {
+    margin-left: 12px;
+    color: #6c6c69;
+}
+
+
+ 
+@media screen and (max-width: 1320px) {
+    .adaptive-menu {
+        width: 600px;
+        margin: 0 auto;
+        padding-top: 15px;
+        display: block;
+        align-items: center;
+    }
+    .logo {
+        margin-left: -15px;
+    }
+    .info-coins {
+        margin-left: 200px;
+        margin-top: -30px;
+    }
+    .icon-user {
+        margin-left: 530px;
+        margin-top: -25px;
+    }
+    .toggle {
+        margin-top: -35px;
+        margin-left: 15px;
+    }
+    .main-menu {
+        display: none;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .container-right {
+        margin-right: 16px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .adaptive-menu {
+        width: 87%;
+    }
+    .info-coins {
+        margin-left: 150px;
+    }
+    .icon-user {
+        margin-left: 480px;
+    }
+    .container-left {
+        width: 94%;
+        margin-top: 16px;
+        margin-bottom: 0px; 
+    }
+    .chess-image img {
+        max-width: 100%;
+    }
+    .container-right {
+        width: 94%;
+        margin-top: -20px; 
+    }
+}
+@media screen and (max-width: 600px) {
+    .info-coins {
+        margin-left: 130px;
+    }
+    .icon-user {
+        margin-left: 400px;
+    }
+    .scoreboard {
+        font-size: 12px;
+    }
+    .notation-header {
+        font-size: 14px;
+    }
+    table {
+        font-size: 12px;
+    }
+    .title-van {
+        font-size: 14px;
+    }
+    .stockfish-title {
+        font-size: 14px;
+    }
+    .server-block {
+        font-size: 12px;
+    }
+    .stockfish-table-block {
+        font-size: 12px;
+    }
+    .zero-coins {
+        font-size: 10px;
+    }
+    .show-more-block {
+        font-size: 12px;
+    }
+}
+
